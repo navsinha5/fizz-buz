@@ -1,0 +1,9 @@
+FROM node:alpine3.10
+
+WORKDIR $HOME/fuzz-bizz
+
+COPY ./* ./
+
+EXPOSE 8080
+
+ENTRYPOINT npm run start
