@@ -17,7 +17,7 @@ app.get('/fizz-buzz', (req, res) => {
     console.log('start ', start);
     console.log('stop ', stop);
 
-    if(!(start && stop)){
+    if(start == NaN && stop == NaN){
        return res.status(400).json({message: 'need start and stop integer'});
     }
 
